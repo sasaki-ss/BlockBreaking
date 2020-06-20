@@ -13,6 +13,7 @@ class BaseScene :public Task {
 protected:
 	SceneChanger* sceneChanger;
 public:
+	BaseScene(SceneChanger* changer) { sceneChanger = changer; }
 	virtual ~BaseScene(){}
 	virtual void Init(){}
 	virtual void Final(){}
