@@ -1,7 +1,7 @@
 #include "Title.h"
 
 //コンストラクタ
-Title::Title() {
+Title::Title(SceneChanger* changer) :BaseScene(changer) {
 
 }
 
