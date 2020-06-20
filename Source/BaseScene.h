@@ -2,6 +2,7 @@
 #define OBJ_BASESCENE_H
 
 #include "Task.h"
+#include "SceneChanger.h"
 
 /*
 *	ベースシーンクラス
@@ -10,7 +11,7 @@
 
 class BaseScene :public Task {
 protected:
-
+	SceneChanger* sceneChanger;
 public:
 	virtual ~BaseScene(){}
 	virtual void Init(){}
