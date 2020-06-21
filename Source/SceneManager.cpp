@@ -25,6 +25,7 @@ void SceneManger::Draw() {
 
 }
 
-void SceneManger::ChangeScene(SceneState nextScene) {
-
+//ƒV[ƒ“‚ğØ‚è‘Ö‚¦‚é
+void SceneManger::ChangeScene(SceneState _nextScene) {
+	nextScene = _nextScene;
 }
