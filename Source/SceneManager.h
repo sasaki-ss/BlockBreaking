@@ -20,7 +20,7 @@ public:
 	void Final();	//終了処理
 	void Update();	//更新処理
 	void Draw();	//描画処理
-	void ChangeScene(SceneState nextScene);
+	void ChangeScene(SceneState _nextScene);	//シーンを切り替える
 };
 
 #endif // !ADMIN_SCENEMANAGER_H
