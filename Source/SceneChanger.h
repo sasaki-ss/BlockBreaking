@@ -5,7 +5,8 @@
 enum class SceneState {
 	Title,
 	Game,
-	Result
+	Result,
+	None
 };
 
 /*
