@@ -15,7 +15,7 @@ enum class SceneState {
 class SceneChanger {
 public:
 	virtual ~SceneChanger(){}
-	virtual void ChangeScene(SceneState nextScene) = 0;
+	virtual void ChangeScene(SceneState _nextScene) = 0;
 };
 
 #endif // !INTERFASE_SCENECHANGER_H
