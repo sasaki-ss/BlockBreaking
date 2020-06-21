@@ -24,3 +24,7 @@ void SceneManger::Update() {
 void SceneManger::Draw() {
 
 }
+
+void SceneManger::ChangeScene(SceneState nextScene) {
+
+}
