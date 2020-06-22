@@ -46,6 +46,8 @@ void SceneManger::Update() {
 		//Ÿ‚ÌƒV[ƒ“‚Ì‰Šú‰»ˆ—‚ğs‚¤
 		scene->Init();
 	}
+
+	scene->Update();
 }
 
 //•`‰æˆ—
