@@ -2,7 +2,7 @@
 
 //GameManagerのコンストラクタ
 GameManager::GameManager() {
-
+	nowScene = SceneState::None;
 }
 
 //GameManangerのデストラクタ
