@@ -7,6 +7,7 @@
 SceneManger::SceneManger() {
 	nextScene = SceneState::None;
 	scene = (BaseScene*)new Title(this);
+	nowScene = SceneState::Title;
 }
 
 //初期化処理
@@ -39,6 +40,9 @@ void SceneManger::Update() {
 			scene = (BaseScene*)new Result(this);
 			break;
 		}
+
+		//次のシーン情報を現在のシーン情報に反映
+		nowScene = nextScene;
 
 		//次のシーン情報をNoneにする
 		nextScene = SceneState::None;
