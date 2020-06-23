@@ -21,8 +21,8 @@ public:
 	void Final();	//終了処理
 	void Update();	//更新処理
 	void Draw();	//描画処理
-	void ChangeScene(SceneState _nextScene);	//シーンを切り替える
-	SceneState GetNowScene();					//現在のシーン情報を取得する
+	void ChangeScene(SceneState _nextScene);		//シーンを切り替える
+	SceneState GetNowScene() { return nowScene; }	//現在のシーンを取得
 };
 
 #endif // !ADMIN_SCENEMANAGER_H
