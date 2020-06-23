@@ -11,8 +11,9 @@
 */
 class SceneManger :public Task, SceneChanger {
 private:
-	BaseScene* scene;
-	SceneState nextScene;
+	BaseScene* scene;		//現在のシーン
+	SceneState nextScene;	//次のシーン情報
+	SceneState nowScene;	//現在のシーン情報
 
 public:
 	SceneManger();	//SceneManagerのコンストラクタ
@@ -21,6 +22,7 @@ public:
 	void Update();	//更新処理
 	void Draw();	//描画処理
 	void ChangeScene(SceneState _nextScene);	//シーンを切り替える
+	SceneState GetNowScene();					//現在のシーン情報を取得する
 };
 
 #endif // !ADMIN_SCENEMANAGER_H
