@@ -15,10 +15,8 @@ private:
 	unsigned int orange;	//オレンジ
 	unsigned int green;		//緑
 public:
-	//コンストラクタ
-	Color();
-	//色の取得
-	unsigned int GetMyColor(int colorNum);
+	Color();	//コンストラクタ
+	unsigned int GetMyColor(int colorNum);	//色の取得
 
 };
 
