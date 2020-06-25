@@ -22,10 +22,14 @@ void GameManager::Final() {
 
 //XVˆ—
 void GameManager::Update() {
-
+	if (nowScene == SceneState::Game) {
+		playerManager.Update();
+	}
 }
 
 //•`‰æˆ—
 void GameManager::Draw() {
-
+	if (nowScene == SceneState::Game) {
+		playerManager.Draw();
+	}
 }
