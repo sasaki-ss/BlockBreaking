@@ -23,11 +23,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
         //シーンマネージャーの更新処理
         sceneManager.Update();
-        //ゲームマネージャーの更新処理
-        gameManager.Update();
 
         //ゲームマネージャーに現在のシーン情報
         gameManager.SetNowScene(sceneManager.GetNowScene());
+
+        //ゲームマネージャーの更新処理
+        gameManager.Update();
 
         //シーンマネージャーの描画処理
         sceneManager.Draw();
