@@ -4,12 +4,15 @@
 #include "Task.h"
 #include "SceneChanger.h"
 
+#include "PlayerManager.h"
+
 /*
 *	ゲームマネージャークラス
 *	ゲームの進行管理を行うクラス
 */
 class GameManager :public Task {
 	SceneState nowScene;
+	PlayerManager playerManager;
 public:
 	GameManager();		//コンストラクタ
 	~GameManager();		//デストラクタ
