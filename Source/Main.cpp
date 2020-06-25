@@ -5,6 +5,12 @@
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     LPSTR lpCmdLine, int nCmdShow) {
 
+    //画面サイズ
+    SetGraphMode(800, 600, 32);
+
+    //タイトル
+    SetMainWindowText("BlockBreaking ver0.5");
+
     //ウィンドウモード変更と初期化と裏画面設定
     ChangeWindowMode(TRUE), DxLib_Init(), SetDrawScreen(DX_SCREEN_BACK);
 
