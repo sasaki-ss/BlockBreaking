@@ -1,3 +1,14 @@
+/**********************************************************************
+ * \file   SceneManager.h
+ * \brief  SceneManagerクラスの宣言
+ * \author かいちょー
+ * \date   2020/6/20
+ * \note   参考サイト⇒https://dixq.net/g/
+ * \par    History
+ *         2020/6/20
+ *         ◆ファイルの作成
+ *********************************************************************/
+
 #ifndef ADMIN_SCENEMANAGER_H
 #define ADMIN_SCENEMANAGER_H
 
@@ -5,24 +16,21 @@
 #include "SceneChanger.h"
 #include "BaseScene.h"
 
-/*
-*	シーンマネージャークラス
-*	シーンの管理を行うクラス
-*/
+ /**********************************************************************
+  * \class   SceneManager
+  * \brief   シーンの管理
+  *********************************************************************/
 class SceneManger :public Task, SceneChanger {
 private:
 	BaseScene* scene;		//現在のシーン
 	SceneState nextScene;	//次のシーン情報
-	SceneState nowScene;	//現在のシーン情報
-
 public:
-	SceneManger();	//SceneManagerのコンストラクタ
-	void Init();	//初期化処理
-	void Final();	//終了処理
-	void Update();	//更新処理
-	void Draw();	//描画処理
-	void ChangeScene(SceneState _nextScene);		//シーンを切り替える
-	SceneState GetNowScene() { return nowScene; }	//現在のシーンを取得
+	SceneManger();
+    void Init();
+	void Final();
+	void Update();
+	void Draw();
+	void ChangeScene(SceneState _nextScene);
 };
 
 #endif // !ADMIN_SCENEMANAGER_H
