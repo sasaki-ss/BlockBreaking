@@ -11,6 +11,7 @@
 
 #include "GameSystem.h"
 #include "DxLib.h"
+#include "GameLoop.h"
 
 /**********************************************************************
  * \fn      Init()
@@ -51,6 +52,12 @@ void GameSystem::Final() const{
  * \return  ‚È‚µ
  *********************************************************************/
 void GameSystem::GameMain() const{
+
+    GameLoop gameLoop;
+
     while(!ScreenFlip() && !ProcessMessage() && !ClearDrawScreen()){
+        if(!gameLoop.loop()){
+            break;
+        }
     }
 }
