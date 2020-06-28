@@ -1,18 +1,23 @@
+/**********************************************************************
+ * \file   SceneChanger.h
+ * \brief  SceneChangerクラスの宣言
+ * \author かいちょー
+ * \date   2020/6/20
+ * \note   参考サイト⇒https://dixq.net/g/
+ * \par    History
+ *         2020/6/20
+ *         ◆ファイルの作成
+ *********************************************************************/
+
 #ifndef INTERFASE_SCENECHANGER_H
 #define INTERFASE_SCENECHANGER_H
 
-//シーンのステータス
-enum class SceneState {
-	Title,
-	Game,
-	Result,
-	None
-};
+#include "SceneState.h"
 
-/*
-*	シーンチェンジクラス
-*	シーン変更を行うインターフェイスクラス
-*/
+ /**********************************************************************
+  * \class   SceneChanger
+  * \brief   シーンを切り替えるインターフェイスクラス
+  *********************************************************************/
 class SceneChanger {
 public:
 	virtual ~SceneChanger(){}
