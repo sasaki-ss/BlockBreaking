@@ -18,7 +18,8 @@
   * \return  ‚È‚µ
   *********************************************************************/
 GameLoop::GameLoop(){
-
+    sceneManager = new SceneManger();
+    sceneManager->Init();
 }
 
 /**********************************************************************
@@ -28,7 +29,8 @@ GameLoop::GameLoop(){
  * \return  ‚È‚µ
  *********************************************************************/
 GameLoop::~GameLoop(){
-
+    sceneManager->Final();
+    delete sceneManager;
 }
 
 /**********************************************************************
@@ -38,6 +40,9 @@ GameLoop::~GameLoop(){
  * \return  true or false
  *********************************************************************/
 bool GameLoop::loop() const{
+
+    sceneManager->Update();
+    sceneManager->Draw();
 
     return true;
 }

@@ -12,11 +12,15 @@
 #ifndef SYSYEM_GAMELOOP_H
 #define SYSYEM_GAMELOOP_H
 
+#include "SceneManager.h"
+
  /**********************************************************************
   * \class   GameLoop
   * \brief   ゲームの処理を繰り返すクラス
   *********************************************************************/
 class GameLoop final{
+private:
+    SceneManger* sceneManager;  //シーンマネージャー
 public:
     GameLoop();
     ~GameLoop();
