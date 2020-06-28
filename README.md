@@ -7,7 +7,7 @@
 
 ※ローカルverで作成済みのものをGitHub版へ反映
 
-##参考サイト
+## 参考サイト
 
 https://dxlib.xsrv.jp/dxfunc.html
 
