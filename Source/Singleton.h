@@ -16,20 +16,19 @@
   * \class   Singleton
   * \brief   インスタンスを一つしか持たないようにする
   *********************************************************************/
-template<class T>
+template<typename T>
 class Singleton{
 private:
-    void operator=(const Singleton& obj) = default;
     Singleton(const Singleton& obj) = default;
+    Singleton& operator=(const Singleton& obj) = default;
 protected:
     Singleton() = default;
     virtual ~Singleton() = default;
 public:
-    static T& GetInst(){
-        static T instance;
-        return instance;
+    static T* GetInst(){
+        static T inst;
+        return &inst;
     }
 };
-
 
 #endif // !DESIGNPATTERN_SINGLETON_H
