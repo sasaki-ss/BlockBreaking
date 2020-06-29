@@ -10,6 +10,8 @@
  *********************************************************************/
 
 #include "GameLoop.h"
+#include "Keyboard.h"
+#include "DxLib.h"
 
  /**********************************************************************
   * \fn      GameLoop()
@@ -41,8 +43,14 @@ GameLoop::~GameLoop(){
  *********************************************************************/
 bool GameLoop::loop() const{
 
+    Keyboard::GetInst()->Update();
+
     sceneManager->Update();
     sceneManager->Draw();
+
+    if(Keyboard::GetInst()->GetPressingCount(KEY_INPUT_ESCAPE) != 0){
+        return false;
+    }
 
     return true;
 }
