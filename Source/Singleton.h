@@ -1,6 +1,6 @@
 /**********************************************************************
- * \file   Title.h
- * \brief  Titleクラスの宣言
+ * \file   Singleton.h
+ * \brief  Singletonクラスの宣言
  * \author かいちょー
  * \date   2020/6/29
  * \note   参考サイト⇒ https://qiita.com/narumi_/items/b205e59e7fc81695f380
