@@ -1,6 +1,6 @@
 /**********************************************************************
- * \file   BaseScene.h
- * \brief  BaseSceneクラスの宣言
+ * \file   Object.h
+ * \brief  Objectクラスの宣言
  * \author かいちょー
  * \date   2020/6/24
  * \note   参考サイト⇒https://dixq.net/g/
