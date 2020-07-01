@@ -3,7 +3,7 @@
  * \brief  Objectクラスの宣言
  * \author かいちょー
  * \date   2020/6/24
- * \note   参考サイト⇒https://dixq.net/g/
+ * \note   参考サイト⇒
  * \par    History
  *         2020/6/24
  *         ◆ファイルの作成
