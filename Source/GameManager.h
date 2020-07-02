@@ -27,7 +27,6 @@ public:
 	void Init();
 	void Final();
 	void Update();
-	void Draw();
 };
 
 #endif // !ADMIN_GAMEMANAGER_H
