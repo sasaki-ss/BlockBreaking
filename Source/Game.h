@@ -13,12 +13,15 @@
 #define OBJ_GAME_H
 
 #include "BaseScene.h"
+#include "GameManager.h"
 
  /**********************************************************************
   * \class    Game
   * \brief   ゲームシーン
   *********************************************************************/
 class Game :BaseScene {
+private:
+    GameManager* gManager;      //ゲームマネージャークラス
 public:
 	Game(SceneChanger* changer);
 	void Init();
