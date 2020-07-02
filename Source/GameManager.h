@@ -1,26 +1,33 @@
+/**********************************************************************
+ * \file   GameManager.h
+ * \brief  GameManagerクラスの宣言
+ * \author かいちょー
+ * \date   2020/6/24
+ * \note   参考サイト⇒
+ * \par    History
+ *         2020/6/24
+ *         ◆ファイルの作成
+ *********************************************************************/
+
 #ifndef ADMIN_GAMEMANAGER_H
 #define ADMIN_GAMEMANAGER_H
 
 #include "Task.h"
-#include "SceneChanger.h"
-
 #include "PlayerManager.h"
 
-/*
-*	ゲームマネージャークラス
-*	ゲームの進行管理を行うクラス
-*/
+ /**********************************************************************
+  * \class   GameManager
+  * \brief   ゲームの進行管理
+  *********************************************************************/
 class GameManager :public Task {
-	SceneState nowScene;
 	PlayerManager playerManager;
 public:
-	GameManager();		//コンストラクタ
-	~GameManager();		//デストラクタ
-	void Init();		//初期化処理
-	void Final();		//終了処理
-	void Update();		//更新処理
-	void Draw();		//描画処理
-	void SetNowScene(SceneState _nowScene) { nowScene = _nowScene; }	//現在のシーンをセットする
+	GameManager();
+	~GameManager();
+	void Init();
+	void Final();
+	void Update();
+	void Draw();
 };
 
 #endif // !ADMIN_GAMEMANAGER_H
