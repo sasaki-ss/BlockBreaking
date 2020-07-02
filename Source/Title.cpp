@@ -11,6 +11,7 @@
 
 #include "Title.h"
 #include "DxLib.h"
+#include "Keyboard.h"
 
  /**********************************************************************
   * \fn      Title()
@@ -49,9 +50,9 @@ void Title::Final() {
  * \return  ‚È‚µ
  *********************************************************************/
 void Title::Update() {
-	if (CheckHitKey(KEY_INPUT_SPACE) != 0) {
-		sceneChanger->ChangeScene(SceneState::Game);
-	}
+if(Keyboard::GetInst()->GetPressingCount(KEY_INPUT_SPACE) != 0){
+    sceneChanger->ChangeScene(SceneState::Game);
+}
 }
 
 /**********************************************************************
